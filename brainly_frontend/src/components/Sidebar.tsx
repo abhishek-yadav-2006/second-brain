@@ -12,7 +12,7 @@ interface SidebarProps {
 }
 
 export function Sidebar({ onFilterChange }: SidebarProps) {
-  const [filter, setFilter] = useState("All");
+  const [_filter, setFilter] = useState("All");
   const router = useNavigate();
 
   // Fetch user on load
