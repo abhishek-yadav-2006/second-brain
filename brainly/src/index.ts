@@ -1,4 +1,6 @@
+require('dotenv').config()
 import express, { Request, Response } from "express";
+
 import mongoose from "mongoose";
 import jwt from "jsonwebtoken"
 import { z } from "zod"
@@ -18,11 +20,11 @@ app.use(cors())
 
 
 
-const mongourl = "mongodb+srv://abhibcs44:0W0k9wtLUT8alytb@cluster0.fyjwzbq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+// const mongourl = "mongodb+srv://abhibcs44:0W0k9wtLUT8alytb@cluster0.fyjwzbq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
 async function main() {
-    await mongoose.connect(mongourl)
+    await mongoose.connect(process.env.DB_URL ?? "")
 }
 
 main()
