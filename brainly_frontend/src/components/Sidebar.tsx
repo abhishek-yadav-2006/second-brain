@@ -46,12 +46,12 @@ export function Sidebar({ onFilterChange }: SidebarProps) {
 
   return (
     <div className="bg-white h-screen w-72 border-r fixed top-0 left-0 flex flex-col p-4">
-      {/* Logo */}
+      
       <div className="text-2xl flex items-center mb-6">
         <div className="pr-2 text-purple-400"><Logo size="lg" /></div> Brainly
       </div>
 
-      {/* Filters */}
+     
       <div className="flex-1 space-y-2">
         <SidebarItem
           text="YouTube"
@@ -70,7 +70,7 @@ export function Sidebar({ onFilterChange }: SidebarProps) {
       <div className="mb-10">
         <button
           onClick={handleLogout}
-          className="w-full bg-gray-200  text-black text-white py-2 px-4 rounded hover:bg-gray-400 transition-all"
+          className="w-full bg-gray-200 text-black  py-2 px-4 rounded hover:bg-gray-400 transition-all"
         >
           Logout
         </button>
