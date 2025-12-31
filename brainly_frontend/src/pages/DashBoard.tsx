@@ -19,7 +19,7 @@ interface Content {
 
 export function DashBoard() {
   const [modelOpen, setModelOpen] = useState(false);
-  const [activeFilter, setActiveFilter] = useState("All"); // Dashboard will use this filter
+  const [activeFilter, setActiveFilter] = useState("All"); 
   const contents: Content[] = useContent();
 
 
