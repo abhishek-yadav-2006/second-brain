@@ -20,7 +20,6 @@ app.use(cors())
 
 
 
-// const mongourl = "mongodb+srv://abhibcs44:0W0k9wtLUT8alytb@cluster0.fyjwzbq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
 async function main() {
